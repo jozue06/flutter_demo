@@ -38,16 +38,28 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   topRow(),
-                  Text("Mo"),
-                  Text("10"),
-                  Container(
-                    width: 4.0,
-                    height: 4.0,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.red,
-                    ),
-                  )
+                  Column(
+                    children:  <Widget>[
+                      Text("Mo",
+                        style: TextStyle(
+                          color: Color(0xff8e7daf),
+                        ),
+                      ),
+                      Text("10",
+                        style: TextStyle(
+                          color: Color(0xff8e7daf),
+                        ),
+                      ),
+                      Container(
+                        width: 4.0,
+                        height: 4.0,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Color(0xff8e7daf),
+                        ),
+                      )
+                    ]
+                  ),
                 ],
               ),
             )
@@ -72,14 +84,14 @@ class topRow extends StatelessWidget {
               fontSize: 24.0,
             ),
           ),
-          SizedBox(width: 18.0),
-          Text("Data",
-            style: TextStyle(
-              color: Color(0xffa79abf),
-              fontWeight: FontWeight.bold,
-              fontSize: 24.0,
-            ),
-          ),
+          // SizedBox(width: 18.0),
+          // Text("Data",
+          //   style: TextStyle(
+          //     color: Color(0xffa79abf),
+          //     fontWeight: FontWeight.bold,
+          //     fontSize: 24.0,
+          //   ),
+          // ),
           Spacer(),
           Text("Jan",
             style: TextStyle(
